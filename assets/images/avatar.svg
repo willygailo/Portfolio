@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Willy Jr Carnasa Gailo cyber developer avatar">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151e29" />
+      <stop offset="100%" stop-color="#090d12" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="55%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+    <linearGradient id="hoodGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.28" />
+      <stop offset="70%" stop-color="#22d3ee" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#090d12" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="120" cy="120" r="102" />
+    </clipPath>
+  </defs>
+
+  <!-- Outer neon frame -->
+  <circle cx="120" cy="120" r="114" fill="#090d12" stroke="url(#ringGrad)" stroke-width="3" />
+  <circle cx="120" cy="120" r="106" fill="none" stroke="#22d3ee" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="10 6" />
+  <circle cx="120" cy="120" r="102" fill="url(#avatarBg)" />
+  <circle cx="120" cy="120" r="102" fill="url(#halo)" />
+
+  <g clip-path="url(#circleClip)">
+    <!-- Subtle cyber hex / circuit backdrop -->
+    <g stroke="#94a3b8" stroke-opacity="0.14" stroke-width="1.5" fill="none">
+      <path d="M120 26L194 68V152L120 194L46 152V68L120 26Z" />
+      <line x1="22" y1="84" x2="62" y2="84" />
+      <line x1="178" y1="84" x2="218" y2="84" />
+      <line x1="22" y1="156" x2="54" y2="156" />
+      <line x1="186" y1="156" x2="218" y2="156" />
+    </g>
+    <circle cx="62" cy="84" r="3" fill="#22d3ee" opacity="0.65" />
+    <circle cx="178" cy="84" r="3" fill="#34d399" opacity="0.65" />
+
+    <!-- Stylized shoulders / jacket -->
+    <path
+      d="M44 226C50 182 78 160 120 160C162 160 190 182 196 226Z"
+      fill="url(#hoodGrad)"
+      stroke="#334155"
+      stroke-width="2"
+    />
+    <!-- Collar accents -->
+    <path d="M88 164L120 192L152 164" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" stroke-linejoin="round" />
+
+    <!-- Hood / helmet silhouette -->
+    <path
+      d="M72 120C72 78 92 54 120 54C148 54 168 78 168 120C168 142 156 158 140 165L120 172L100 165C84 158 72 142 72 120Z"
+      fill="#111822"
+      stroke="url(#ringGrad)"
+      stroke-width="2.5"
+    />
+
+    <!-- Inner face plate -->
+    <path
+      d="M84 114C84 86 99 70 120 70C141 70 156 86 156 114C156 135 142 152 120 156C98 152 84 135 84 114Z"
+      fill="#090d12"
+      stroke="#1e293b"
+      stroke-width="2"
+    />
+
+    <!-- Cyber visor -->
+    <path
+      d="M90 105C90 100 94 96 99 96H141C146 96 150 100 150 105V115C150 121 144 125 137 125H127L120 119L113 125H103C96 125 90 121 90 115V105Z"
+      fill="#0f172a"
+      stroke="#22d3ee"
+      stroke-width="2"
+    />
+    <!-- Glowing visor optics -->
+    <rect x="97" y="106" width="16" height="6" rx="3" fill="#34d399" />
+    <rect x="127" y="106" width="16" height="6" rx="3" fill="#22d3ee" />
+
+    <!-- Terminal emblem on chest -->
+    <path
+      d="M106 196L116 202L106 208"
+      fill="none"
+      stroke="#34d399"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <rect x="121" y="205" width="16" height="3" rx="1.5" fill="#22d3ee" />
+  </g>
+</svg>

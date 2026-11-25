@@ -1,0 +1,19 @@
+{
+  "name": "Willy Jr Carnasa Gailo — Portfolio",
+  "short_name": "willygailo",
+  "description": "Mobile-first developer portfolio for Willy Jr Carnasa Gailo (@willygailo): Android systems, security tools, and pentesting utilities.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090d12",
+  "theme_color": "#090d12",
+  "icons": [
+    {
+      "src": "assets/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
