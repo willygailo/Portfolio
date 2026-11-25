@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Subtle Motion, Status Pulse, Scroll Reveals & Reduced-Motion Overrides
+   ========================================================================== */
+
+@keyframes status-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--accent-glow);
+  }
+  50% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
+
+@keyframes sheet-slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.status-dot {
+  animation: status-pulse 2.4s ease-in-out infinite;
+}
+
+.bottom-sheet.is-open .bottom-sheet__panel {
+  animation: sheet-slide-up var(--duration-sheet) var(--ease-out);
+}
+
+/* IntersectionObserver Scroll Reveal States */
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 320ms var(--ease-out),
+    transform 320ms var(--ease-out);
+}
+
+.reveal-ready.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect User Reduced-Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .status-dot {
+    animation: none;
+  }
+
+  .bottom-sheet.is-open .bottom-sheet__panel {
+    animation: none;
+  }
+
+  .reveal-ready,
+  .reveal-ready.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
